@@ -1,0 +1,206 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Common section styling */
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: #00bcd4;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* About Me Text */
+  .about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* Skills List */
+  .skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skill-item {
+    background: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background: #004d40;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #e0f2f1;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #b2dfdb;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #03a6bc;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #00838f;
+  }
+  
+  /* Horizontal line */
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #00bcd4, #ffffff);
+    margin: 40px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .skills-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  /* Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 40px;
+  }
+  
+  /* Grid layout for project cards */
+  .projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Project Card Styling */
+  .project-card {
+    background-color: #e0f2f1;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card h3 {
+    color: #00bcd4;
+    margin-bottom: 15px;
+  }
+  
+  .project-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Hover effect for project cards */
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive - Stack project cards vertically on small screens */
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
